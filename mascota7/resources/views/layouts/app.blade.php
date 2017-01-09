@@ -11,7 +11,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/bootstrap-material-design.css" rel="stylesheet">
+     <link href="css/ripples.min.css" rel="stylesheet">
+
 
     <!-- Scripts -->
     <script>
@@ -82,6 +85,13 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script >
+    $.material.init();
+    </script>
+    @yield('scriptss');
+
 </body>
 </html>

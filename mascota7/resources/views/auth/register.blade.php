@@ -5,13 +5,13 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+                <div class="panel-heading">Registrarse</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
+                            <label for="name" class="col-md-4 control-label">Nombre se usuario</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
@@ -25,7 +25,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                            <label for="email" class="col-md-4 control-label">Correo electronico</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
@@ -39,7 +39,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
+                            <label for="password" class="col-md-4 control-label">Contraseña</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control" name="password" required>
@@ -59,7 +59,19 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+  <div class="form-group">
+  <label for="password-confirm" class="col-md-4 control-label">Selec Photo</label>
+  <input type="file" id="inputFile4" multiple="">
 
+  <div class="input-group">
+    <input type="text" readonly="" class="form-control" placeholder="Placeholder w/input-group...">
+    <span class="input-group-btn input-group-sm">
+      <button type="button" class="btn btn-fab btn-fab-mini">
+        <i class="mdi-editor-attach-file"></i>
+      </button>
+    </span>
+  </div>
+</div>
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
