@@ -6,8 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CreateAdopcionsTable' => $baseDir . '/database/migrations/2017_01_09_222840_create_adopcions_table.php',
+    'CreateEventosTable' => $baseDir . '/database/migrations/2017_01_09_221952_create_eventos_table.php',
+    'CreateFundacionsTable' => $baseDir . '/database/migrations/2017_01_09_222326_create_fundacions_table.php',
     'CreateMascotasTable' => $baseDir . '/database/migrations/2017_01_09_211905_create_mascotas_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreatePublicidadsTable' => $baseDir . '/database/migrations/2017_01_09_223515_create_publicidads_table.php',
     'CreateSexosTable' => $baseDir . '/database/migrations/2017_01_09_213124_create_sexos_table.php',
     'CreateTamanosTable' => $baseDir . '/database/migrations/2017_01_09_213334_create_tamanos_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',

@@ -278,8 +278,12 @@ class ComposerStaticInit89e58fe591257f0bfb0aa912b35b9def
     );
 
     public static $classMap = array (
+        'CreateAdopcionsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_09_222840_create_adopcions_table.php',
+        'CreateEventosTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_09_221952_create_eventos_table.php',
+        'CreateFundacionsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_09_222326_create_fundacions_table.php',
         'CreateMascotasTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_09_211905_create_mascotas_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreatePublicidadsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_09_223515_create_publicidads_table.php',
         'CreateSexosTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_09_213124_create_sexos_table.php',
         'CreateTamanosTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_09_213334_create_tamanos_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
