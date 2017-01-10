@@ -10,65 +10,66 @@
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Nombre de usuario</label>
+                        <div class="md-form">
+                            
 
-                            <div class="col-md-6">
+                            
+                              <i class="fa fa-user prefix"></i>
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
-
+                                  <label for="name" class="col-md-4 control-label">Nombre de usuario</label>
                                 @if ($errors->has('name'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
                                     </span>
                                 @endif
-                            </div>
+                        
                         </div>
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                        <div class="md-form">
+                        <i class="fa fa-envelope prefix"></i>
                             <label for="email" class="col-md-4 control-label">Correo electronico</label>
 
-                            <div class="col-md-6">
+                            
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
+                                <label for="email" class="col-md-4 control-label">Correo electronico</label>
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
-                            </div>
+                            
                         </div>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Contraseña</label>
-
-                            <div class="col-md-6">
+                        <div class="md-form"}">
+                            <i class="fa fa-lock prefix"></i>
                                 <input id="password" type="password" class="form-control" name="password" required>
-
+                                <label for="password" class="col-md-4 control-label">Contraseña</label>
                                 @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
-                            </div>
+                            
                         </div>
 
-                        <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
-
-                            <div class="col-md-6">
+                        <div class="md-form">
+                           <i class="fa fa-lock prefix"></i>
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
+                                <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
+                            
                         </div>
-                      <div class="form-group">
-                    <label for="urlimg" class="col-md-4 control-label">Seleccione una imagen</label>
-                 <div class="col-md-6">
-             <input type="file" id="inputFile4" name="urlimg" multiple="">
-            <input type="text" readonly="" class="form-control" placeholder="Esta imagen se vera en su perfil">
-              <span class="input-group-btn input-group-sm">
-                </span>
-                    </div>
-                      </div>
-                        <div class="form-group">
+                     
+                     <div class="file-field">
+        <div class="btn btn-primary btn-sm">
+            <span>Choose file</span>
+            <input type="file" style="display: none;>
+        </div>
+        <div class="file-path-wrapper">
+           <input class="file-path validate" type="text" placeholder="Upload your file">
+        </div>
+    </div>
+                      
+                        <div class="md-form">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     Registrarse
