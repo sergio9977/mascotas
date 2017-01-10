@@ -40,7 +40,7 @@
                             
                         </div>
 
-                        <div class="md-form"}">
+                        <div class="md-form">
                             <i class="fa fa-lock prefix"></i>
                                 <input id="password" type="password" class="form-control" name="password" required>
                                 <label for="password" class="col-md-4 control-label">Contraseña</label>
@@ -62,7 +62,7 @@
                      <div class="file-field">
         <div class="btn btn-primary btn-sm">
             <span>Choose file</span>
-            <input type="file" style="display: none;>
+            <input type="file" style="display: none;">
         </div>
         <div class="file-path-wrapper">
            <input class="file-path validate" type="text" placeholder="Upload your file">

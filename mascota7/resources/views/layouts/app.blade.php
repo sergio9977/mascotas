@@ -96,7 +96,62 @@
 
         @yield('content')
     </div>
+<!--Footer-->
+<footer class="page-footer center-on-small-only">
 
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6">
+                <h5 class="title">Pagina de adopcion</h5>
+                <p>Somos una organizacion que se dedica ala adopcion y rescate de mascotas junto con muchas
+                organizaciones que estan registradas en nuestra web</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-2 offset-md-1">
+                <h5 class="title">Links</h5>
+                <ul>
+                    <li><a href="#!">Link 1</a></li>
+                    <li><a href="#!">Link 2</a></li>
+                    <li><a href="#!">Link 3</a></li>
+                    <li><a href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Third column-->
+            <div class="col-md-2">
+                <h5 class="title">Redes Sociales</h5>
+                <ul>
+                    <li><a class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"> </i></a></li>
+                    <li><a class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"> </i></a></li>
+                    <li><a class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"> </i></a></li>
+                    <li><a class="btn-floating btn-small btn-ins"><i class="fa fa-instagram"> </i></a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+            
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2017 Copyright: <a href="http://www.google.com"> Mascotas.com </a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
     <!-- Scripts -->
     <script src="js/app.js"></script>
     <!-- Bootstrap tooltips -->
