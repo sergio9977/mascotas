@@ -14,7 +14,7 @@
                             
 
                             
-                              <i class="fa fa-user prefix"></i>
+                            <!--  <i class="fa fa-user prefix"></i>-->
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
                                   <label for="name" class="col-md-4 control-label">Nombre de usuario</label>
                                 @if ($errors->has('name'))
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="md-form">
-                        <i class="fa fa-envelope prefix"></i>
+                      <!--  <i class="fa fa-envelope prefix"></i>-->
                             <label for="email" class="col-md-4 control-label">Correo electronico</label>
 
                             
@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="md-form">
-                            <i class="fa fa-lock prefix"></i>
+                           <!-- <i class="fa fa-lock prefix"></i>-->
                                 <input id="password" type="password" class="form-control" name="password" required>
                                 <label for="password" class="col-md-4 control-label">Contraseña</label>
                                 @if ($errors->has('password'))
@@ -53,21 +53,20 @@
                         </div>
 
                         <div class="md-form">
-                           <i class="fa fa-lock prefix"></i>
+                         <!--  <i class="fa fa-lock prefix"></i>-->
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                                 <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
                             
                         </div>
                      
-                     <div class="file-field">
-        <div class="btn btn-primary btn-sm">
-            <span>Choose file</span>
-            <input type="file" style="display: none;">
-        </div>
-        <div class="file-path-wrapper">
-           <input class="file-path validate" type="text" placeholder="Upload your file">
-        </div>
-    </div>
+                    <div class="md-form">
+                   
+                 
+             <input type="file" id="inputFile4" name="urlimg" multiple="">
+            <input type="text" readonly="" class="form-control" placeholder="Esta imagen se vera en su perfil">
+             
+                    
+                      </div>
                       
                         <div class="md-form">
                             <div class="col-md-6 col-md-offset-4">
