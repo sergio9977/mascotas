@@ -99,30 +99,14 @@
 
     <!-- Scripts -->
     <script src="js/app.js"></script>
-<<<<<<< HEAD
-  
-
-   <!-- JQuery -->
-    <script type="text/javascript" src="{{asset('js/Jquery-3.1.1.min.js')}}"></script>
-
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="{{asset('js/tether.min.js')}}"></script>
-
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
-
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
-
-=======
-    <script src="js/material.min.js"></script>
-    <script src="js/ripples.min.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/jquery.js"></script>
-    <script >
-    $.material.init();
-    </script>
->>>>>>> origin/master
+	<script src="{{asset('//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')}}"></script>
+	<script src="{{asset('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js')}}"></script>
     @yield('scriptss');
 
 </body>
