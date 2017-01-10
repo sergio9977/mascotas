@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Registrarse</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}" enctype="multipart/form-data">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/user') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
                         <div class="md-form">
@@ -62,7 +62,7 @@
                     <div class="md-form">
                    
                  
-             <input type="file" id="inputFile4" name="urlimg" multiple="">
+             <input type="file" id="inputFile4" name="urlimage" multiple="">
             <input type="text" readonly="" class="form-control" placeholder="Esta imagen se vera en su perfil">
              
                     
