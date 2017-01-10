@@ -12,8 +12,20 @@
 
     <!-- Styles -->
     <link href="css/app.css" rel="stylesheet">
-    <link href="css/bootstrap-material-design.css" rel="stylesheet">
-     <link href="css/ripples.min.css" rel="stylesheet">
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
 
 
     <!-- Scripts -->
@@ -56,6 +68,7 @@
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
+                        
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -86,11 +99,20 @@
 
     <!-- Scripts -->
     <script src="js/app.js"></script>
-    <script src="js/material.min.js"></script>
-    <script src="js/ripples.min.js"></script>
-    <script >
-    $.material.init();
-    </script>
+  
+
+   <!-- JQuery -->
+    <script type="text/javascript" src="{{asset('js/Jquery-3.1.1.min.js')}}"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{{asset('js/tether.min.js')}}"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
+
     @yield('scriptss');
 
 </body>
