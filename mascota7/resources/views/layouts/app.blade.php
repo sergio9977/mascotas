@@ -99,6 +99,7 @@
 
     <!-- Scripts -->
     <script src="js/app.js"></script>
+<<<<<<< HEAD
   
 
    <!-- JQuery -->
@@ -113,6 +114,15 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
 
+=======
+    <script src="js/material.min.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/jquery.js"></script>
+    <script >
+    $.material.init();
+    </script>
+>>>>>>> origin/master
     @yield('scriptss');
 
 </body>
