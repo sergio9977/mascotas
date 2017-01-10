@@ -88,6 +88,8 @@
     <script src="js/app.js"></script>
     <script src="js/material.min.js"></script>
     <script src="js/ripples.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/jquery.js"></script>
     <script >
     $.material.init();
     </script>

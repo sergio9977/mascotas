@@ -11,7 +11,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Nombre se usuario</label>
+                            <label for="name" class="col-md-4 control-label">Nombre de usuario</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
@@ -59,23 +59,19 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
-  <div class="form-group">
-  <label for="password-confirm" class="col-md-4 control-label">Selec Photo</label>
-  <input type="file" id="inputFile4" multiple="">
-
-  <div class="input-group">
-    <input type="text" readonly="" class="form-control" placeholder="Placeholder w/input-group...">
-    <span class="input-group-btn input-group-sm">
-      <button type="button" class="btn btn-fab btn-fab-mini">
-        <i class="mdi-editor-attach-file"></i>
-      </button>
-    </span>
-  </div>
-</div>
+                      <div class="form-group">
+                    <label for="urlimg" class="col-md-4 control-label">Seleccione una imagen</label>
+                 <div class="col-md-6">
+             <input type="file" id="inputFile4" name="urlimg" multiple="">
+            <input type="text" readonly="" class="form-control" placeholder="Esta imagen se vera en su perfil">
+              <span class="input-group-btn input-group-sm">
+                </span>
+                    </div>
+                      </div>
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Register
+                                    Registrarse
                                 </button>
                             </div>
                         </div>
