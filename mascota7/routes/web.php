@@ -11,8 +11,11 @@
 |
 */
 
+use App\User;
+
 Route::get('/', function () {
-    return view('welcome');
+  $datos=User::all();
+    return view('welcome')->with(['datos'=> $datos]);
 });
 
 Auth::routes();

@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/user') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/user') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -65,9 +65,9 @@
                                 @endif
                             </div>
                         </div>
-                            
-                    <div class="">
-                         <label for="name" class="col-md-4 control-label">Imagen de perfil</label>
+
+                    <div class="form-group">
+                         <label for="urlimage" class="col-md-4 control-label">Imagen de perfil</label>
                             <div class="col-md-6">
                                 <input type="file" id="inputFile4" name="urlimage" multiple="">
                                  <input type="text" readonly="" class="form-control col-md-4" placeholder="Esta imagen se vera en su perfil">

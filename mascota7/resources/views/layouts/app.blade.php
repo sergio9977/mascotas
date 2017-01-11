@@ -68,7 +68,7 @@
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
-                        
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -136,7 +136,7 @@
                 </ul>
             </div>
             <!--/.Second column-->
-            
+
         </div>
     </div>
     <!--/.Footer Links-->
@@ -154,6 +154,10 @@
 <!--/.Footer-->
     <!-- Scripts -->
     <script src="js/app.js"></script>
+    <script src="js/ripples.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="{{asset('js/tether.min.js')}}"></script>
     <!-- Bootstrap core JavaScript -->
