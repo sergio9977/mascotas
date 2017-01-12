@@ -1,3 +1,9 @@
+@extends('layouts.app')
+
+@section('content')
+
+<div class="container">
+    <div class="row">
 <!--Carousel Wrapper-->
 <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
     <!--Indicators-->
@@ -32,9 +38,6 @@
 
         <!--Second slide-->
         @foreach ($datos as $da)
-
-
-
 
         <div class="carousel-item">
             <!--Mask color-->
@@ -72,3 +75,8 @@
     <!--/.Controls-->
 </div>
 <!--/.Carousel Wrapper-->
+        
+    </div>
+</div>
+
+@endsection
