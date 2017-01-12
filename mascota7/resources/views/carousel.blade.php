@@ -3,9 +3,14 @@
 @section('content')
 
 <div class="container">
-    <div class="row">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <div class="panel panel-default">
+
+                  <div class="panel-body">
 <!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carousel-example-2" class="carousel slide carousel-fade"  data-ride="carousel">
     <!--Indicators-->
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
@@ -20,9 +25,8 @@
         <!--First slide-->
         <div class="carousel-item active">
             <!--Mask color-->
-            <div class="view hm-black-light">
-                <img src="http://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="img-fluid" alt="">
-                <div class="full-bg-img">
+            <div class="view hm-black-light"  style="background-image: url(http://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg); height: 600px; width: 700px;">
+                <img src="http://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
                 </div>
             </div>
             <!--Caption-->
@@ -41,8 +45,8 @@
 
         <div class="carousel-item">
             <!--Mask color-->
-            <div class="view hm-black-strong">
-                <img src="imgUser/{{$da->urlimage}}" class="img-fluid" alt="">
+            <div class="view hm-black-strong" style="background-image: url(imgUser/{{$da->urlimage}}); height: 600px; width: 700px;" >
+
                 <div class="full-bg-img">
                 </div>
             </div>
@@ -75,8 +79,15 @@
     <!--/.Controls-->
 </div>
 <!--/.Carousel Wrapper-->
-        
+
     </div>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 @endsection
