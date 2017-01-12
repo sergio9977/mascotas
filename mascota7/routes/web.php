@@ -10,11 +10,14 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+ 
 
 use App\User;
 
 Route::get('/', function () {
-  $datos=User::all();
+  $datos=User::orderBy('id', 'desc')
+		->take(3)
+		->get();
     return view('welcome')->with(['datos'=> $datos]);
 });
 
