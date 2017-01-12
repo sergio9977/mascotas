@@ -13,9 +13,10 @@
  
 
 use App\User;
+use App\mascota;
 
 Route::get('/', function () {
-  $datos=User::orderBy('id', 'desc')
+  $datos=mascota::orderBy('Id_Mascota', 'desc')
 		->take(3)
 		->get();
     return view('welcome')->with(['datos'=> $datos]);
