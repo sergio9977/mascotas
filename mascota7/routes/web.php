@@ -10,7 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
- 
+
 
 use App\User;
 use App\mascota;
@@ -25,8 +25,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::resource('delete/{id}','mascotas@destroy');
 
 Route::resource('/user','Users');
 Route::get('auth/{provider}', 'Auth\RegisterController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\RegisterController@handleProviderCallback');
-
