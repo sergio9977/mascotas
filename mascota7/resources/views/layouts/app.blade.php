@@ -17,15 +17,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>Material Design Bootstrap</title>
+	<link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('material-design/dist/css/bootstrap-material-design.min.css')}}">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('material-design/dist/css/ripples.min.css')}}">
+    <!--<link rel="stylesheet" href="{{asset('MDB-Free/css/mdb.min.css')}}">-->
 
 
     <!-- Scripts -->
@@ -159,20 +155,16 @@
 </footer>
 <!--/.Footer-->
     <!-- Scripts -->
-    <script src="js/app.js"></script>
-    <script src="js/ripples.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-2.2.3.min.js"></script>
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="{{asset('js/tether.min.js')}}"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
 	<script src="{{asset('//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')}}"></script>
 	<script src="{{asset('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js')}}"></script>
-    @yield('scriptss');
+	<script src="{{asset('material-design/dist/js/material.min.js')}}"></script>
+	<script src="{{asset('material-design/dist/js/ripples.min.js')}}"></script>
+	<script src="{{asset('MDB-Free/js/mdb.min.js')}}"></script>
+	<script>
+		$.material.init();
+	</script>
+	
+	@yield('scripts')
 
 </body>
 </html>

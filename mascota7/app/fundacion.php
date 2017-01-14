@@ -4,11 +4,28 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class fundacion extends Model
+class Fundacion extends Model
 {
-     protected $table = 'fundacion';
+    /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    protected $table = 'fundacion';
 
+    /**
+    * The database primary key value.
+    *
+    * @var string
+    */
     protected $primaryKey = 'Id_Fundacion';
 
-    protected $fillable = ['Nombre', 'Id_Usuario', 'Direccion', 'Telefono', 'Descipcion', 'Logo', 'Id_Estado'];
+    /**
+     * Attributes that should be mass-assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['Nombre', 'Descripcion', 'Id_Usuario', 'Direccion', 'Logo', 'Telefono', 'Id_Estado'];
+
+    
 }

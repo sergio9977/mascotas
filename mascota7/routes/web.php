@@ -26,3 +26,7 @@ Route::resource('/user','Users');
 Route::get('auth/{provider}', 'Auth\RegisterController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\RegisterController@handleProviderCallback');
 
+
+
+Route::resource('fundacion', 'FundacionController');
+Route::resource('fundacion/fundacion', 'fundacion\\FundacionController');
