@@ -15,26 +15,22 @@
 use App\User;
 use App\mascota;
 
-Route::get('/', function () {
+/*Route::get('/', function () {
   $datos=mascota::orderBy('Id_Mascota', 'desc')
 		->take(3)
 		->get();
     return view('welcome')->with(['datos'=> $datos]);
-});
+});*/
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::resource('delete/{id}','mascotas@destroy');
+//Route::resource('delete/{id}','mascotas@destroy');
 
 Route::resource('/user','Users');
 Route::get('auth/{provider}', 'Auth\RegisterController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\RegisterController@handleProviderCallback');
-<<<<<<< HEAD
 
 
 
 Route::resource('fundacion', 'FundacionController');
-Route::resource('fundacion/fundacion', 'fundacion\\FundacionController');
-=======
->>>>>>> origin/master
