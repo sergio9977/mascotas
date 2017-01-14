@@ -45,7 +45,7 @@
 
         <div class="carousel-item">
             <!--Mask color-->
-            <div class="view hm-black-strong" style="background-image: url(imgUser/{{$da->urlimage}}); height: 600px; width: 700px;" >
+            <div class="view hm-black-strong" style="background-image: url(imgUser/{{$da->Foto}}); height: 600px; width: 700px;" >
 
                 <div class="full-bg-img">
                 </div>
@@ -53,8 +53,8 @@
             <!--Caption-->
             <div class="carousel-caption">
                 <div class="animated fadeInDown">
-                    <h3 class="h3-responsive">{{$da->name}}</h3>
-                    <p>{{$da->email}}</p>
+                    <h3 class="h3-responsive">{{$da->Nombre}}</h3>
+                    <p>{{$da->Descripcion}}</p>
                 </div>
             </div>
             <!--Caption-->

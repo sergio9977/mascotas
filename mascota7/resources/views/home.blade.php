@@ -1,3 +1,5 @@
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -7,11 +9,11 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
-                    You are logged in!
-                </div>
+            <!--Shopping Cart table-->
+
             </div>
         </div>
     </div>
 </div>
+@include('layouts.tablamascota')
 @endsection
