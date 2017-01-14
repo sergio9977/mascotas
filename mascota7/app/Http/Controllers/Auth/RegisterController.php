@@ -52,7 +52,6 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
-            'urlimage' => 'required|max:255',
             'password' => 'required|min:6|confirmed',
         ]);
     }
@@ -68,7 +67,6 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'urlimage' => $data['urlimage'],
             'password' => bcrypt($data['password']),
         ]);
     }
@@ -98,16 +96,10 @@ class RegisterController extends Controller
         if(!$socialProvider)
         {
             //create a new user and provider
-           /* $user = User::firstOrCreate(
+            $user = User::firstOrCreate(
                 ['email' => $socialUser->getEmail()],
-                ['name' => $socialUser->getName()],
-                ['urlimage' => $socialUser->getAvatar()]
-            );*/
-            $user = new User();
-            $user->name = $socialUser->getName();
-            $user->email = $socialUser->getEmail();
-            $user->urlimage = $socialUser->getAvatar();
-            $user->save();
+                ['name' => $socialUser->getName()]
+            );
 
             $user->socialProviders()->create(
                 ['provider_id' => $socialUser->getId(), 'provider' => $provider]
